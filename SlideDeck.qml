@@ -2,6 +2,7 @@ import Presentation 1.0
 import Qt.labs.presentation 1.0
 import QtQuick 2.13
 import QtQuick.Controls 2.13
+import "qrc:///"
 
 Presentation {
     id: presentation
@@ -50,28 +51,105 @@ Presentation {
     Slide {
         title: "Agenda"
         content: [
-            " Intro",
-            " Questions?",
+            " Estudios",
+            " Trayectoria profesional",
+            " ¿Preguntas?",
         ]
     }
 
     Slide {
-        title: "Intro: Jesús Fernández"
+        title: "Estudios"
         content: [
-            "Current:",
-            " Technical Lead @ Pix4D",
-            " @Qt Project:",
-            "  Maintainer of:",
-            "   Qt Http Server (not merged)",
-            "   Qt Network Auth (since 5.8)",
-            "   Qt WebGL Streaming (since 5.10)",
-            "Previous:",
-            " The Qt Company, Gameloft, HP, Panda Security"
+            "ITI Electrónica Industrial",
+            "DAI (FP2)",
+            "ITI Informática - Especialidad Sistemas",
         ]
+        delayPoints: true
     }
 
     Slide {
-        title: "Questions?"
+        title: "Trayectoria Profesional - Inicios"
+        content: [
+            "Trabajos menores en Asturias"
+        ]
+    }
+
+    WebSlide {
+        title: "Panda Security"
+        url: "https://www.pandasecurity.com/"
+        delayPoints: true
+    }
+
+    YoutubeSlide {
+        title: "Hewlett-Packard"
+        video: "z3RkVkHBPBU"
+    }
+
+    Slide {
+        title: "Gameloft"
+        content: [
+            "Equipo de Engine - Jet Engine 1 & 2:",
+            " Minion Rush",
+            " Asphalt 8",
+            " Asphalt 9/Unite",
+            " ...",
+        ]
+        delayPoints: true
+    }
+
+
+    YoutubeSlide {
+        title: "Gameloft - Minion Rush"
+        video: "E4HclOqb4D4"
+    }
+
+    YoutubeSlide {
+        title: "Gameloft - Asphalt 8"
+        video: "S1q7ItE--8s"
+    }
+
+    YoutubeSlide {
+        title: "Gameloft - Asphalt 9/Unite"
+        video: "ot63S91Ihwk"
+    }
+
+    WebSlide {
+        title: "The Qt Company"
+        url: "https://www.qt.io/"
+    }
+
+    YoutubeSlide {
+        title: "Pix4D - Pix4Dscan"
+        video: "dFKOC4gO50U"
+    }
+
+    YoutubeSlide {
+        title: "EA - Madden 21 Stadia Port"
+        video: "id1g0ixUuAQ"
+    }
+
+    YoutubeSlide {
+        title: "EA - Madden 22"
+        video: "99pKCOZ3vE0"
+    }
+
+    YoutubeSlide {
+        title: "EA - Madden 23"
+        video: "Qv6G_w8RUOo"
+    }
+
+    YoutubeSlide {
+        title: "EA - Madden 24"
+        video: "sVa0dMCGD7k"
+    }
+
+    YoutubeSlide {
+        title: "Forgotten Empires - Age of Empires II: Definitive Edition"
+        video: "ZOgBVR21pWg"
+    }
+
+    Slide {
+        title: "¿Preguntas?"
         content: [
             "IRC 💬 jefernan @ #qt-labs (freenode)",
             "Twitter 🐦 @jsfdez",

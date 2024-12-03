@@ -3,6 +3,7 @@ TEMPLATE = app
 QT += \
     qml \
     quick \
+    webenginequick \
 
 DEFINES += \
     BRANCH=\\\"$$system(git --git-dir=${PWD}/.git rev-parse --abbrev-ref HEAD)\\\"

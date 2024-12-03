@@ -6,5 +6,8 @@
         <file>imports/Qt/labs/presentation/Slide.qml</file>
         <file>imports/Qt/labs/presentation/SlideCounter.qml</file>
         <file>imports/Qt/labs/presentation/qmldir</file>
+        <file>Web.qml</file>
+        <file>YoutubeSlide.qml</file>
+        <file>WebSlide.qml</file>
     </qresource>
 </RCC>

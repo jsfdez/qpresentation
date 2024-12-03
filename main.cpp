@@ -1,15 +1,20 @@
 #include <QtCore/qdebug.h>
 #include <QtCore/qfile.h>
+#include <QtCore/qcoreapplication.h>
+#include <QtQuick/qquickwindow.h>
 #include <QtCore/qlocale.h>
 #include <QtCore/qstring.h>
 #include <QtGui/qguiapplication.h>
 #include <QtQml/qjsvalue.h>
 #include <QtQml/qqmlapplicationengine.h>
+#include <QtWebEngineQuick/qtwebenginequickglobal.h>
 
 int main(int argc, char **argv)
 {
-    QGuiApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
-    QLocale::setDefault(QLocale::English);
+    QLocale::setDefault(QLocale::Spanish);
+    QCoreApplication::setAttribute(Qt::AA_ShareOpenGLContexts);
+    QQuickWindow::setGraphicsApi(QSGRendererInterface::OpenGLRhi);
+    QtWebEngineQuick::initialize();
     QGuiApplication app(argc, argv);
     app.setApplicationName("<title>");
     app.setOrganizationName("jsfdez");
