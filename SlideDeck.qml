@@ -220,8 +220,8 @@ Presentation {
     Slide {
         title: "Consejos Generales"
         content: [
-            " Aprende Inglés",
-            " Guarda todo lo que hagas",
+            " APRENDE INGLÉS",
+            " Guarda todo lo que hagas (aprende a usar Git correctamente)",
             " Graba todo lo que hagas",
             "  Si no lo grabas, no lo has hecho",
             " Toma nota de todo lo que hagas (usa ObsidianMD, Notion, ...)",
