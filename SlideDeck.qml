@@ -51,12 +51,26 @@ Presentation {
     Slide {
         title: "Agenda"
         content: [
-            " Estudios",
+            " Inicios",
+            " Formación",
+            "  Estudios",
+            "  Habilidades",
             " Trayectoria profesional",
+            " Consejos",
+            "  ¿Cómo empezar?",
+            "  Entrevista",
+            "  Trabajar",
+            "  Consejos Generales",
             " ¿Preguntas?",
         ]
     }
 
+    WebSlide {
+        title: "Inicios"
+        url: "https://es.wikipedia.org/wiki/Sinclair_ZX_Spectrum#Sinclair_ZX_Spectrum_+128"
+    }
+
+//#region Formación
     Slide {
         title: "Estudios"
         content: [
@@ -68,6 +82,18 @@ Presentation {
     }
 
     Slide {
+        title: "Habilidades"
+        content: [
+            "Experto en C++ (20+ años)",
+            "Experto en C (5+ años)",
+            "Colaborador y experto en Qt",
+        ]
+        delayPoints: true
+    }
+//#endregion
+
+//#region Trayectoria Profesional
+    Slide {
         title: "Trayectoria Profesional - Inicios"
         content: [
             "Trabajos menores en Asturias"
@@ -77,7 +103,6 @@ Presentation {
     WebSlide {
         title: "Panda Security"
         url: "https://www.pandasecurity.com/"
-        delayPoints: true
     }
 
     YoutubeSlide {
@@ -94,7 +119,6 @@ Presentation {
             " Asphalt 9/Unite",
             " ...",
         ]
-        delayPoints: true
     }
 
 
@@ -147,14 +171,77 @@ Presentation {
         title: "Forgotten Empires - Age of Empires II: Definitive Edition"
         video: "ZOgBVR21pWg"
     }
+// #endregion
+
+// #region Consejos
+    Slide {
+        title: "Consejos - ¿Cómo empezar?"
+        content: [
+            " Disfrutar de lo que haces",
+            " Colaborar",
+            " Intentar siempre mejorar",
+            "  ¿He escrito el código más limpio que he podido?",
+            "   Intenta no repetirte",
+            "   Intenta no usar StackOverflow",
+            "  ¿He usado las mejores prácticas que conozco?",
+            "  ¿He usado funciones que desconocia?",
+            " Escribe siempre en Inglés",
+        ]
+        delayPoints: true
+    }
 
     Slide {
-        title: "¿Preguntas?"
+        title: "Consejos - Entrevista"
         content: [
-            "IRC 💬 jefernan @ #qt-labs (freenode)",
-            "Twitter 🐦 @jsfdez",
-            "E-Mail 📧 jesus.fernandez@qt.io",
+            " ¿Qué se de la empresa?",
+            " ¿Qué se de la tecnología?",
+            " ¿Qué se de la persona que me va a entrevistar?",
+            " Analiza a tu entrevistador",
+            "  ¿Va a dejarme preguntar? Aprovéchate",
+            " No te pongas nerviosos",
         ]
+        delayPoints: true
+    }
+
+    Slide {
+        title: "Consejos - Trabajar"
+        content: [
+            " Intenta aprender lo máximo posible en cada trabajo",
+            " Si tienes tareas repetitivas, intenta automatizarlas",
+            " Si identificas a un compañero que sabe mucho, intenta aprender de él",
+            " Si identificas a un compañero que no sae mucho, intenta ayudarle",
+            " Vas a tener que trabajar 8 horas, saca el máximo rendimiento de ellas",
+            " Si no te gusta lo que haces, cambia",
+            "  Intenta quedar bien con todos tus compañeros, es posible que os volvais a encontrar",
+        ]
+        delayPoints: true
+    }
+
+    Slide {
+        title: "Consejos Generales"
+        content: [
+            " Aprende Inglés",
+            " Guarda todo lo que hagas",
+            " Graba todo lo que hagas",
+            "  Si no lo grabas, no lo has hecho",
+            " Toma nota de todo lo que hagas (usa ObsidianMD, Notion, ...)",
+            " Haz trampas siempre que no te las hagas a tí mismo",
+            " Haz conexiones con la gente",
+            " Pásalo bien",
+        ]
+        delayPoints: true
+    }
+
+// #endregion
+
+    Slide {
+        title: "Fin"
+        centeredText: "Gracias por escucharme"
+    }
+
+    ImageSlide {
+        title: "¿Preguntas?"
+        imageSource: "qrc:///linkedin.png"
 
         Label {
             font.pixelSize: introSlide.baseFontSize / 2

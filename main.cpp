@@ -16,7 +16,7 @@ int main(int argc, char **argv)
     QQuickWindow::setGraphicsApi(QSGRendererInterface::OpenGLRhi);
     QtWebEngineQuick::initialize();
     QGuiApplication app(argc, argv);
-    app.setApplicationName("<title>");
+    app.setApplicationName("Vida del Programador");
     app.setOrganizationName("jsfdez");
 
     QQmlApplicationEngine engine;
